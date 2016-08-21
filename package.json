@@ -8,14 +8,16 @@
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "lint": "./node_modules/.bin/eslint src test",
-    "test": "mocha --compilers js:babel-register test/helpers/browser.js test/**/*.spec.js"
+    "test": "mocha --compilers js:babel-register --colors --reporter spec test/helpers/browser.js test/**/*.spec.js",
+    "cover": "babel-node ./node_modules/.bin/isparta cover _mocha -- ./test/helpers/browser.js ./test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/saskcow/npzr"
+    "url": "https://github.com/saskcow/npzr"
   },
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.1",
@@ -23,8 +25,10 @@
     "browser-sync": "^2.13.0",
     "browser-sync-webpack-plugin": "^1.1.0",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
     "eslint": "^3.3.1",
     "expose-loader": "^0.7.1",
+    "isparta": "^4.0.0",
     "mocha": "^3.0.2",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",

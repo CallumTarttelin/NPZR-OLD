@@ -1,7 +1,8 @@
 import {expect} from 'chai';
+import {foo as rules} from '../../src/logic/rules';
 
 describe('wizard', () => {
   it('should do stuff', () => {
-    expect('foo').to.equal('foo');
+    expect(rules('foo')).to.equal('bar');
   });
 });
