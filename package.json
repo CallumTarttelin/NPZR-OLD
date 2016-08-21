@@ -8,6 +8,7 @@
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "lint": "./node_modules/.bin/eslint src test",
+    "posttest": "npm run lint",
     "test": "mocha --compilers js:babel-register --colors --reporter spec test/helpers/browser.js test/**/*.spec.js",
     "cover": "babel-node ./node_modules/.bin/isparta cover _mocha -- ./test/helpers/browser.js ./test/**/*.spec.js"
   },
