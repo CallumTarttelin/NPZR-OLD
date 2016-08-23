@@ -4,7 +4,7 @@ export class Menu extends Phaser.State {
   create() {
     let textStyle = {font: '45px Arial', alight: 'center', stroke: 'white', fill: 'green'};
 
-    let title = this.game.add.text(this.game.world.centerX, this.game.world.centerY - 100, 'ES2015 Wizard', textStyle);
+    let title = this.game.add.text(this.game.world.centerX, this.game.world.centerY - 100, 'ES2015 Card', textStyle);
     title.anchor.set(0.5);
 
     textStyle.font = '36px Arial';
