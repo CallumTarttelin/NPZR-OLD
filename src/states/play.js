@@ -7,7 +7,7 @@ export class Play extends Phaser.State {
 
     this.game.stage.backgroundColor = '#FFFFFF';
     this.zone = new Phaser.Rectangle(300, 300, 200, 200);
-    this.game.debug.geom(this.zone,'#0fffff');
+    this.game.debug.geom(this.zone, '#0fffff');
     this.card = new Card(this.game, 350, 300, this.zone);
     this.game.add.existing(this.card);
   }

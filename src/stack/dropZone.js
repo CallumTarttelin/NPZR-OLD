@@ -6,7 +6,7 @@ export default class DropZone {
     this._bodyPart = bodyPart;
   }
 
-  isValid(x, y, card) {
+  isValid(/*x, y, card*/) {
     return false;
   }
 }

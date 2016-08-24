@@ -14,12 +14,11 @@ export class Card extends Phaser.Sprite {
     this.events.onDragStop.add(this.onDragStop, this);
 
   }
-  onDragStart(sprite, pointer) {
+  onDragStart(sprite) {
     this.startPos = {x: sprite.x, y: sprite.y};
   }
 
   onDragStop(sprite, pointer) {
-    console.log("hi");
     const tween = this.game.add.tween(sprite);
     if (this.zone.contains(pointer.x, pointer.y)){
       tween.to({x: 1000}, 100, 'Linear', true, 0);
