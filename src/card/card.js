@@ -7,12 +7,12 @@ export default class Card extends Phaser.Sprite {
     super(game, x, y, 'npzr', 3);
     this.bodyPart = bodyPart;
     this.character = character;
-    
+
     this.spriteIndexes = this._calculateSpriteIndex(character, bodyPart);
   }
 
   update() {
-    this.frame = this.spriteIndex;
+    this.frame = this.spriteIndexes[0];
   }
 
   _calculateSpriteIndex(character, bodyPart) {
