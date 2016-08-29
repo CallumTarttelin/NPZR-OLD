@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import {Card} from '../sprites/card';
 
-export class Play extends Phaser.State {
+export default class Play extends Phaser.State {
   create() {
     this.game.stage.backgroundColor = '#FFFFFF';
     this.zone = new Phaser.Rectangle(300, 300, 200, 200);

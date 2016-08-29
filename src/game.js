@@ -1,6 +1,5 @@
 import Phaser from 'phaser';
-import {Load} from './states/load';
-import {Play} from './states/play';
+import {Load, Play} from './states';
 
 export class Game extends Phaser.Game {
   constructor() {

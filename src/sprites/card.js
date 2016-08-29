@@ -2,9 +2,8 @@ import Phaser from 'phaser';
 
 export class Card extends Phaser.Sprite {
   constructor(game, x, y, zone) {
-    super(game, x, y, 'wizard');
+    super(game, x, y, 'npzr');
     this.zone = zone;
-    this.scale.setTo(0.65, 0.65);
 
     this.inputEnabled = true;
     this.input.enableDrag();
