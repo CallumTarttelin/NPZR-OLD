@@ -22,6 +22,7 @@ describe('Card', () => {
     expect(new Card({}, 10, 10, CHARACTER.Ninja, BODY_PART.Wild).spriteIndexes).to.deep.equal([0, 4, 8]);
     expect(new Card({}, 10, 10, CHARACTER.Pirate, BODY_PART.Head).spriteIndexes).to.deep.equal([1]);
   });
+
   it('should set the card image index to the first sprite index on update', () => {
     const card = new Card({}, 10, 10, CHARACTER.Ninja, BODY_PART.Torso);
     let frame;
